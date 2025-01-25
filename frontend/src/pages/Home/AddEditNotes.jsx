@@ -97,7 +97,7 @@ const AddEditNotes = ({ onClose, noteData, type, getAllNotes }) => {
         <MdClose className="text-xl text-slate-400" />
       </button>
       <div className="flex flex-col gap-2">
-        <label className="input-label text-red-400 uppercase">Title</label>
+        <label className="input-label text-black">Title</label>
 
         <input
           type="text"
@@ -108,7 +108,7 @@ const AddEditNotes = ({ onClose, noteData, type, getAllNotes }) => {
         />
       </div>
       <div className="flex flex-col gap-2 mt-4">
-        <label className="input-label text-red-400 uppercase">Content</label>
+        <label className="input-label text-black ">Content</label>
 
         <textarea
           type="text"
@@ -121,7 +121,7 @@ const AddEditNotes = ({ onClose, noteData, type, getAllNotes }) => {
       </div>
 
       <div className="mt-3">
-        <label className="input-label text-red-400 uppercase">tags</label>
+        <label className="input-label text-black">Tags</label>
         <TagInput tags={tags} setTags={setTags} />
       </div>
 
