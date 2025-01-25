@@ -10,6 +10,7 @@
   body {
     background-color: rgb(241, 245, 241);
     overflow-x: hidden;
+    padding: 16px;
   }
 }
 
@@ -19,7 +20,7 @@
   }
 
   .btn-primary {
-    @apply w-full text-sm bg-[#2B85FF] text-white p-2 rounded my-1 hover:bg-blue-700;
+    @apply w-full text-sm bg-black text-white p-2 rounded my-1 border-2 border-black hover:bg-white hover:text-black;
   }
 
   .icon-btn {
