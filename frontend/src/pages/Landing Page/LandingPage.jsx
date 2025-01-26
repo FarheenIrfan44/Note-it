@@ -18,7 +18,7 @@ export const LandingPage = () => {
           Write your thoughts down here as they come to you
         </h5>
         <a
-          href="http://localhost:5173/signup"
+          href="http://localhost:5173/login"
           className="m-8 border-4 border-[#12296c] bg-[#12296c] text-white text-xl p-1 px-8 rounded-full inline-block transition hover:-translate-y-2 hover:bg-[#A9CD85] hover:text-[#12296c]"
         >
           Start now! its free
