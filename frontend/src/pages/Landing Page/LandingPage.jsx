@@ -14,7 +14,7 @@ export const LandingPage = () => {
       }}
     >
       <div className="text-white text-center overflow-x-hidden">
-        <h5 className="mb-4 text-[#12296c] font-extrabold text-6xl max-w-[50rem]">
+        <h5 className="mb-4 text-[#12296c] font-extrabold text-6xl max-w-[40rem]">
           Write your thoughts down here as they come to you
         </h5>
         <a

@@ -174,11 +174,6 @@ const Home = () => {
           </div>
         ) : (
           <EmptyCard
-            imgSrc={
-              isSearch
-                ? "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtakcQoMFXwFwnlochk9fQSBkNYkO5rSyY9A&s"
-                : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDCtZLuixBFGTqGKdWGLaSKiO3qyhW782aZA&s"
-            }
             message={
               isSearch
                 ? "Oops! No Notes found matching your search"
@@ -206,7 +201,7 @@ const Home = () => {
           },
         }}
         contentLabel=""
-        className="w-[40%] max-md:w-[60%] max-sm:w-[70%] max-h-3/4 bg-white rounded-md mx-auto mt-14 p-5 overflow-scroll"
+        className="w-[40%] max-md:w-[60%] max-sm:w-[70%] max-h-3/4 bg-white rounded-md mx-auto mt-16 p-4"
       >
         <AddEditNotes
           onClose={() =>

@@ -89,15 +89,15 @@ const AddEditNotes = ({ onClose, noteData, type, getAllNotes }) => {
   }
 
   return (
-    <div className="relative">
+    <div className="relative rounded-md">
       <button
         className="w-10 h-10 rounded-full flex items-center justify-center absolute -top-3 -right-3 hover:bg-slate-50"
         onClick={onClose}
       >
-        <MdClose className="text-xl text-slate-400" />
+        <MdClose className="text-xl text-[#12296c]" />
       </button>
       <div className="flex flex-col gap-2">
-        <label className="input-label text-black">Title</label>
+        <label className="input-label text-[#12296c]">Title</label>
 
         <input
           type="text"
@@ -108,11 +108,11 @@ const AddEditNotes = ({ onClose, noteData, type, getAllNotes }) => {
         />
       </div>
       <div className="flex flex-col gap-2 mt-4">
-        <label className="input-label text-black ">Content</label>
+        <label className="input-label text-[#12296c] ">Content</label>
 
         <textarea
           type="text"
-          className="text-sm text-slate-950 outline-none bg-slate-50 p-2 rounded"
+          className="text-sm text-slate-950 outline-none bg-slate-50 p-2 rounded border-2 border-[#A9CD85]"
           placeholder="Content..."
           rows={10}
           value={content}
@@ -121,7 +121,7 @@ const AddEditNotes = ({ onClose, noteData, type, getAllNotes }) => {
       </div>
 
       <div className="mt-3">
-        <label className="input-label text-black">Tags</label>
+        <label className="input-label text-[#12296c]">Tags</label>
         <TagInput tags={tags} setTags={setTags} />
       </div>
 
