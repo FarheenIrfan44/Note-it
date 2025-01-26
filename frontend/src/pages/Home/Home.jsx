@@ -151,7 +151,7 @@ const Home = () => {
         }}
       >
         {allNotes.length > 0 ? (
-          <div className="h-fit grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 mt-16 max-md:m-5 ">
+          <div className="h-fit grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 mt-16 max-md:m-8 ">
             {allNotes.map((note, index) => (
               <NoteCard
                 key={note._id}
