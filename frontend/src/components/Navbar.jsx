@@ -54,7 +54,7 @@ const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
   return (
     <div className="bg-white flex items-center justify-between px-6 py-2 drop-shadow rounded-md">
       <Link to={"/"}>
-        <h2 className="text-xl font-medium text-black py-2">
+        <h2 className="text-xl font-medium text-[#12296c] py-2">
           <span className="text-slate-500">Note</span>
           <span className="text-slate-900">It</span>
         </h2>

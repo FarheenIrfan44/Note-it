@@ -17,7 +17,7 @@ const NoteCard = ({
     <div className="border rounded-md p-4 bg-white hover:shadow-xl hover:-translate-y-2 transition-all ease-in-out">
       <div className="flex items-center justify-between">
         <div>
-          <div><h6 className="text-[#12296c] text-lg  font-bold">{title}</h6></div>
+          <div><h6 className="text-[#12296c] text-base  font-semibold">{title}</h6></div>
           
           
         </div>
@@ -30,7 +30,7 @@ const NoteCard = ({
         />
       </div>
 
-      <p className="text-sm text-slate-600 mt-4">{content?.slice(0, 40)}</p>
+      <p className="text-sm text-slate-600 mt-4">{content?.slice(0, 25)}</p>
 
       <div className="flex items-center justify-between mt-4">
         <div className="text-xs text-slate-500">

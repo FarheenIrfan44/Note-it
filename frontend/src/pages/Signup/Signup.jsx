@@ -107,7 +107,7 @@ const Signup = () => {
               Already have an account?{" "}
               <Link
                 to={"/login"}
-                className="font-medium text-[#2B85FF] underline"
+                className="font-medium text-[#12296c] underline"
               >
                 Login
               </Link>

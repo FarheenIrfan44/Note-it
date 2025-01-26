@@ -147,11 +147,11 @@ const Home = () => {
           backgroundImage: `url(${backgroundImg})`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          height: "91vh",
+          height: "92vh",
         }}
       >
         {allNotes.length > 0 ? (
-          <div className="h-fit grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 mt-16 max-md:m-8 ">
+          <div className="h-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 mt-16 max-md:m-8 ">
             {allNotes.map((note, index) => (
               <NoteCard
                 key={note._id}
