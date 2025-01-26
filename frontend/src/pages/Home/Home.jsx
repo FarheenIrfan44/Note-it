@@ -9,6 +9,7 @@ import Navbar from "../../components/Navbar";
 import axios from "axios";
 import { toast } from "react-toastify";
 import EmptyCard from "../../components/EmptyCard/EmptyCard";
+import backgroundImg from "../../assets/homebackground.png";
 
 const Home = () => {
   const { currentUser, loading, errorDispatch } = useSelector(
@@ -19,8 +20,6 @@ const Home = () => {
   const [allNotes, setAllNotes] = useState([]);
 
   const [isSearch, setIsSearch] = useState(false);
-
-  // console.log(allNotes)
 
   const navigate = useNavigate();
 
@@ -141,9 +140,18 @@ const Home = () => {
         handleClearSearch={handleClearSearch}
       />
 
-      <div className="container mx-auto">
+      <div
+        className="container flex justify-center"
+        style={{
+          backgroundSize: "cover",
+          backgroundImage: `url(${backgroundImg})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          height: "91vh",
+        }}
+      >
         {allNotes.length > 0 ? (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-8 max-md:m-5">
+          <div className="h-fit grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 mt-16 max-md:m-5 ">
             {allNotes.map((note, index) => (
               <NoteCard
                 key={note._id}
@@ -181,7 +189,7 @@ const Home = () => {
       </div>
 
       <button
-        className="w-16 h-16 flex items-center justify-center rounded-2xl bg-black transition hover:-translate-y-2 absolute right-10 bottom-10"
+        className="w-16 h-16 flex items-center justify-center rounded-2xl bg-[#12296c] transition hover:-translate-y-2 absolute right-10 bottom-10"
         onClick={() => {
           setOpenAddEditModal({ isShown: true, type: "add", data: null });
         }}
